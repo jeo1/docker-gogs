@@ -1,0 +1,10 @@
+services:
+  gogs:
+    image: gogs/gogs:latest
+    pull_policy: always
+    container_name: gogs
+    volumes:
+      - "${DATA}:/data"
+    ports:
+      - "10022:22"
+      - "3000:3000"
