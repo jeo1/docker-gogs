@@ -1,6 +1,7 @@
 services:
   gogs:
     image: gogs/gogs:latest
+    restart: always
     pull_policy: always
     container_name: gogs
     volumes:
